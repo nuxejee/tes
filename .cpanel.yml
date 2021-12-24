@@ -1,0 +1,9 @@
+---
+ 
+deployment:
+ 
+ tasks:
+ 
+ - export DEPLOYPATH=/home/ankabutt/public_html/numpang/tes
+ 
+ - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
